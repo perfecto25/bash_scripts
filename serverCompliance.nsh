@@ -1,6 +1,8 @@
 #!/bin/nsh
 ## this script runs OS Compliance against servers provided as arguments. 
 
+# Description: run script like this 'nsh compliance.nsh server1 server 2 server3 etc' 
+# Script takes each server as an argument, checks if the server is enrolled, if enrolled, it gets the Server OS name and creates temporary server groups based on OS name, adds the server to the group and then runs an OS-specific compliance job against the group
 
 PARENT_GROUP="/Workspace/test"
 DATESTAMP=$(date +%m%d%y%H%M%S)
