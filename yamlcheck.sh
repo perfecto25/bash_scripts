@@ -1,6 +1,6 @@
 #!/bin/bash
-# This script will parse all .yaml files in given dir and check syntax
-# usage: ./yamlcheck.sh /path/to/yaml/dir
+# This script will parse all .yaml files in current dir and check syntax
+#set -x
 
 cd $1
 
