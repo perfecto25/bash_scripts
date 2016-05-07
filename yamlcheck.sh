@@ -1,6 +1,15 @@
 #!/bin/bash
 # This script will parse all .yaml files in current dir and check syntax
-#set -x
+# requires Ruby to installed on system
+# usage: ./yamlcheck.sh /path/to/dir
+
+
+## check dir
+if [ -z ${1} ]
+then
+	echo "Please provide directory for yaml files"
+	exit 1
+fi
 
 cd $1
 
